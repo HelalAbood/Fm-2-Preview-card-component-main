@@ -5,7 +5,7 @@
 ### Links
 
 - My Profile on frontendmentor: https://www.frontendmentor.io/profile/HelalAbood
-- Link To Challenge: https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV/hub
+- Link To Challenge: https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa
 - Live Site URL: (https://helalabood.github.io/Fm-2-Preview-card-component-main/)
 
 
