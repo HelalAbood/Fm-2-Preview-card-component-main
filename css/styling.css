@@ -1,0 +1,161 @@
+
+
+:root { 
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body { 
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Fraunces', serif;
+}
+.parent { 
+    background-color: var(--cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+@media (max-width: 767px) { 
+    .parent { 
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        padding: 30px;
+    }
+}
+.parent .holder { 
+    display: flex;
+}
+@media (max-width: 767px) { 
+    .parent .holder { 
+        height: 100%;
+        flex-direction: column;
+        margin: 40px;
+    }
+}
+.parent .holder .left { 
+    width: 350px;
+}
+.parent .holder .left img{ 
+    width: 350px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+@media (max-width: 767px) { 
+    .parent .holder .left img { 
+        display: none;
+    }
+}
+@media (max-width: 767px) { 
+    .parent .holder .left {
+        min-width: 100%;
+        min-height: 300px;
+        max-width: 350px;
+        background-image: url(../imgs/mobile-image.jpg);
+        background-size: cover;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+}
+.parent .holder .right { 
+    background-color: var(--white);
+    width: 350px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+@media (max-width: 767px) { 
+    .parent .holder .right { 
+        position: relative;
+        z-index: 2;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 10px;
+        min-height: 450px;
+        border-bottom-left-radius: 10px;
+    }
+}
+.parent .holder .right .up p { 
+    margin-bottom: 0;
+    color: var(--dark-grayish-blue);
+    font-size: 14px;
+    max-width: 90%;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+.parent .holder .right .up h3 { 
+    color: var(--dark-grayish-blue);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+.parent .holder .right .up h1 { 
+    max-width: 80%;
+    font-weight: 32px;
+}
+@media (max-width: 767px) { 
+    .parent .holder .right .up p { 
+        margin-bottom: 10px;
+    }
+}
+.parent .holder .right .down { 
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+@media (max-width: 767px) { 
+    .parent .holder .right .down { 
+        margin-bottom: 5px;
+    }
+}
+.parent .holder .right .down span:first-child { 
+    font-size: 40px;
+    color: var(--dark-cyan);
+    font-weight: 700;
+}
+.parent .holder .right .down span:last-child { 
+    font-size: 14px;
+    color: var(--dark-grayish-blue);
+    font-weight: 500;
+    position: absolute;
+    right: 110px;
+}
+.parent .holder .right .p-relative { 
+    text-align: center;
+    background-color: var(--dark-cyan);
+    padding: 20px;
+    border-radius: 10px;
+}
+@media (max-width: 767px) { 
+    .parent .holder .right .p-relative { 
+        padding: 15px;
+    }
+}
+.parent .holder .right .p-relative a { 
+    text-decoration: none;
+    position: relative;
+    color: var(--white);
+}
+.parent .holder .right .p-relative a::before { 
+    position: absolute;
+    font-weight: 900;
+    content: "\f07a";
+    font-family: var(--fa-style-family-classic);
+    font-size: 18px;
+    color: var(--white);
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
